@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Uso das Salas</title>
+    <link rel="stylesheet" href="relatorio.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <h1>Histórico de Uso das Salas</h1>
+        <button id="voltar" onclick="window.close()">Voltar</button>
+    </header>
+    
+    <div class="container">
+        <div class="secao">
+            <h2>Ocupações Registradas</h2>
+            <div class="tabela-container">
+                <table id="tabela-ocupacoes">
+                    <thead>
+                        <tr>
+                            <th>Sala</th>
+                            <th>Data</th>
+                            <th>Horário</th>
+                            <th>Nome</th>
+                            <th>Contato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados serão inseridos aqui pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="secao">
+            <h2>Agendamentos Ativos</h2>
+            <div class="tabela-container">
+                <table id="tabela-agendamentos">
+                    <thead>
+                        <tr>
+                            <th>Sala</th>
+                            <th>Data/Horário</th>
+                            <th>Responsável</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados serão inseridos aqui pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="botoes-container">
+            <button id="exportar-txt">Exportar TXT</button>
+            <button id="limpar-historico">Limpar Histórico</button>
+        </div>
+    </div>
+
+    <script src="relatorio.js"></script>
+</body>
+</html>
